@@ -57,18 +57,6 @@ component name="KendoBootstrapHandler" extends="coldbox.system.EventHandler" {
 	// 			API 																			 
 	// ******************************************************************************************
 
-	// GetPostList - will get all posts returned as a JSON string
-	//public void function GetPostList(event, rc, prc) {
-	//	var posts = GetPostListJSON();
-	//	event.renderData(type="json", data=posts);
-	//}
-	
-
-	
-	// ******************************************************************************************
-	// 			HELPER FUNCTIONS 																 
-	// ******************************************************************************************
-	
 	// this method will get all posts and serialize them into a "posts" JSON string
 	public string function GetPostListJSON() {
 		var posts = PostService.getAll();

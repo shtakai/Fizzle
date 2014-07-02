@@ -19,7 +19,7 @@ component name="FizHandler" extends="coldbox.system.EventHandler" {
 		return "<h4>Hello World!</h4>";	
 	}
 
-	// Echo a simple string name in the request context
+	// Echo a simple string name in the Request Context
 	public function EchoName(event, rc, prc) {
 		return "<h4>Hello " & rc.name & " </h4>";
 	}

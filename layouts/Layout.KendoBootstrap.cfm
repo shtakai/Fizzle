@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Fizzle my Nizzle</title>
+	<title>Fizzle Kendo Bootstrap</title>
 	<base href="<cfoutput>#getSetting( 'htmlBaseURL' )#</cfoutput>" />
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="includes/styles/kendo.common.min.css" />
@@ -19,7 +19,7 @@
     <header>
 		<div class="container">
         	<div class="row">
-  				<div class="col-md-9"><h3 class="TitleImage">Fizzle my Kendo Bootstrap</h3></div>
+  				<div class="col-md-9"><h3 class="TitleImage">Fizzle Kendo Bootstrap</h3></div>
   				<div class="col-md-3">
   					<div class="HeaderWelcome">
 						<cfoutput>

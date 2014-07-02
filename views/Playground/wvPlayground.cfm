@@ -11,11 +11,11 @@
 		kendo.bind($('form#testView'),viewModel);
 		
 		
-		// Div loading of data
+		// loading of static data via DIV
 		$("#myDiv").load('index.cfm/PlaygroundHandler/SayHelloWorld');
 		
 		
-		// GET - simple get and load into HTML
+		// GET - simple get and load static content into DOM
 		$.get('index.cfm/PlaygroundHandler/SayHelloWorld', function(data){
 			$('#myGETDiv').html(data)
 		});
@@ -41,14 +41,13 @@
 		}); // end nameButton click
 		
 		
-		// GET static JSON to display
+		// GET static JSON to display in DOM
 		$.getJSON('index.cfm/PlaygroundHandler/GetJSONPostList', function(data) {
 			var items = [];
 			$.each(data, function () {
 				$.each(this, function(key, val){
 					switch (key) {
 						case 'Subject':
-							//console.log("Subject: " + val);
 							$('div#myJSONREsultList ul').append('<li>' + val + '</li>');
 							break;
 						case 'Body':
@@ -65,7 +64,6 @@
 			dataType: "json",
 			url: 'index.cfm/PlaygroundHandler/GetJSONPostList',
 			success: function(data) {
-				//console.log(data);
 				// initialize kendo ui listview
 				$("#listView").kendoListView({
 		            template: "<li>${Subject}</li>",
@@ -83,6 +81,9 @@
 	});
 </script>
 
+
+
+
 <!-- Kendo UI test view -->
 <form id="testView" name="testView">
 	Firstname: <input id="firstName" type="text" data-bind="value: fname"><br/>
@@ -91,8 +92,11 @@
 	<input type="submit" />
 </form>
 
+
 <!-- Hello World - DIV loading of data -->
 <div id="myDiv"></div>
+
+
 <!-- Hello World - GET -->
 <div id="myGETDiv"></div>
 
@@ -103,6 +107,7 @@
 	<Button type="button" id="nameButton">What's My Name?!!?</Button>
 </form>	
 <div id="echoNameDiv"></div>
+
 
 <p>	
 	JSON GET Subject:

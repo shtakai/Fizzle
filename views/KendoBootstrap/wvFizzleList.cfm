@@ -56,6 +56,3 @@
 			
 	});	 
 </script>
- <script>
-    //var app = new kendo.Application(document.body);
-</script>

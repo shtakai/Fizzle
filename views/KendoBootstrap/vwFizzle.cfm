@@ -14,6 +14,8 @@
 	</form>
 </cfif>
 
+
+
 <!-- Kendo UI Template - Fizzle -->
 <script type="text/x-kendo-template" id="FizzleViewTemplate">
 	<div class="row">
@@ -28,7 +30,9 @@
 	</div>
 </script>
 
-<!-- Kendo UI Template - Fizzle -->
+
+
+<!-- Kendo UI Template - Comments -->
 <script type="text/x-kendo-template" id="CommentViewTemplate">
 	<div id="CommentItem">
 		<div class="row">
